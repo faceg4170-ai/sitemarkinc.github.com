@@ -1,0 +1,10 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "<h1>welcome to sitemarkinc!<h1><p>HELLOWORLD!</p>"
+
+    if __name__== "_main_":
+        app.run(debug=True)
